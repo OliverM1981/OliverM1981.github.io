@@ -42,6 +42,7 @@
 
 html {
   scroll-behavior: smooth;
+  
 }
 
 body {
@@ -49,6 +50,9 @@ body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   color: var(--second-color);
+  background-image: url(../img/backg1.png);
+  background-attachment: scroll;
+  
 }
 
 h1, h2, p {
@@ -192,6 +196,8 @@ img {
   position: relative;
   row-gap: 5rem;
   padding: 4rem 0 5rem;
+  background-image: url(//assets/img/—Pngtree—abstract\ geometric\ technology\ background_5562789.png);
+  background-attachment: scroll
 }
 
 .home__data {
@@ -269,7 +275,7 @@ img {
 
 .about__img img {
   width: 200px;
-  border-radius: .5rem;
+  border-radius: 50%;
 }
 
 /* ===== SKILLS =====*/

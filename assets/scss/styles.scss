@@ -44,12 +44,15 @@
 }
 html{
     scroll-behavior: smooth;
+    
 }
 body{
     margin: var(--header-height) 0 0 0;
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
     color: var(--second-color);
+    background-image: url(../img/backg1.png);
+    background-attachment: scroll;
 }
 h1,h2,p{
     margin: 0;  
@@ -203,7 +206,7 @@ img{
     position: relative;
     row-gap: 5rem;
     padding: 4rem 0 5rem;
-
+    
     &__data{
         align-self: center;
     }
@@ -278,6 +281,7 @@ img{
             border-radius: .5rem;
         }
     }
+    background-image: url(../img/14624.jpg);
 }
 
 /* ===== SKILLS =====*/
