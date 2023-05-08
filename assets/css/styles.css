@@ -196,8 +196,7 @@ img {
   position: relative;
   row-gap: 5rem;
   padding: 4rem 0 5rem;
-  background-image: url(//assets/img/—Pngtree—abstract\ geometric\ technology\ background_5562789.png);
-  background-attachment: scroll
+ 
 }
 
 .home__data {
@@ -468,6 +467,8 @@ img {
 @media screen and (min-width: 768px) {
   body {
     margin: 0;
+    background-image: url(../img/backg1.png);
+    background-attachment: scroll;
   }
   .section {
     padding-top: 4rem;
@@ -509,6 +510,7 @@ img {
   }
   .about__img img {
     width: 300px;
+    border-radius: 50%;
   }
   .skills__container {
     grid-template-columns: repeat(2, 1fr);
