@@ -345,9 +345,9 @@ img{
 .work{
     &__wpp{
         
-        width: 10%;
+        width: 20%;
         border-radius: .5rem;
-        transition: 1s;
+        transition: 0.5s;
         align-items: center;;
     }
 
@@ -363,7 +363,7 @@ img{
             transition: 1s;
 
             &:hover{
-                transform: scale(1.1);
+                transform: scale(0.5);
             }
         }
     }

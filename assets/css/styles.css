@@ -346,21 +346,21 @@ img {
 
 /* ===== WORK =====*/
 .work__container {
-  row-gap: 2rem;
+  row-gap: 1rem;
 }
 
 .work__img {
   box-shadow: 0px 2px 10px rgba(14, 36, 49, 0.15);
-  border-radius: .5rem;
+  border-radius: 2rem;
   overflow: hidden;
 }
 
 .work__img img {
-  transition: 1s;
+  transition: 0.5s;
 }
 
 .work__img img:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
 /* ===== CONTACT =====*/
