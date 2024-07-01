@@ -198,9 +198,15 @@
                     </a>
                     <form id="contact-form" class="contact__form">
                         <h2 class="section-text">Ou envie sua mensagem</h2>
-                        <input type="text" name="name" placeholder="Seu nome" class="contact__input" required>
-                        <input type="email" name="email" placeholder="Seu e-mail" class="contact__input" required>
-                        <textarea name="message" placeholder="Digite aqui a sua mensagem" cols="0" rows="10" class="contact__input" required></textarea>
+                        <label for="name" class="required-label">Seu nome <span class="required-asterisk">*</span></label>
+                        <input type="text" id="name" name="name" placeholder="" class="contact__input" required>
+                        
+                        <label for="email" class="required-label">Seu e-mail <span class="required-asterisk">*</span></label>
+                        <input type="email" id="email" name="email" placeholder="" class="contact__input" required>
+                        
+                        <label for="message" class="required-label">Digite aqui a sua mensagem <span class="required-asterisk">*</span></label>
+                        <textarea id="message" name="message" placeholder="" cols="0" rows="10" class="contact__input" required></textarea>
+                        
                         <input type="submit" value="Enviar" class="contact__button button">
                     </form>
                 </div>
