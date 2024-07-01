@@ -54,3 +54,40 @@ sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text',{});
 sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img',{delay: 200}); 
 sr.reveal('.home__social-icon',{ interval: 100}); 
 sr.reveal('.skills__data, .work__img, .contact__input',{interval: 100}); 
+
+/*===== EMAILJS INTEGRATION =====*/
+// Inicialize o EmailJS
+(function() {
+    emailjs.init(UwqsJ4UJFOds2_6ML); 
+
+function sendEmail(event) {
+    event.preventDefault(); // Impede o envio padrão do formulário
+
+    const form = document.getElementById('contact-form');
+    const name = form.querySelector('input[name="name"]').value;
+    const email = form.querySelector('input[name="email"]').value;
+    const message = form.querySelector('textarea[name="message"]').value;
+
+    // Verificar se os campos estão vazios
+    if (!name || !email || !message) {
+        alert('Por favor, preencha todos os campos.');
+        return;
+    }
+
+    const serviceID = 'service_9z7d8oo';
+    const templateID = 'template_1bdwe6b'; // Use o Template ID configurado no EmailJS
+
+    emailjs.sendForm(serviceID, templateID, form)
+        .then(function(response) {
+            alert('Mensagem enviada com sucesso!');
+            form.reset(); // Limpa o formulário
+        }, function(error) {
+            alert('Erro ao enviar mensagem. Tente novamente mais tarde.');
+        });
+}
+
+// Adicione o event listener ao formulário
+const contactForm = document.getElementById('contact-form');
+if (contactForm) {
+    contactForm.addEventListener('submit', sendEmail);
+}

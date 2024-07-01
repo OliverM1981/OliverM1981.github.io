@@ -196,11 +196,11 @@
                     <a href="https://api.whatsapp.com/send?phone=5542999140831&text=&source=&data=" class="work__wpp">
                         <img src="assets/img/wpp.png"  alt="WhatsApp"style="display: block; margin: 0 auto; width: 6%;">
                     </a>
-                    <form action="https://formspree.io/f/mrgvjpoe" method="POST" class="contact__form">
+                    <form id="contact-form" class="contact__form">
                         <h2 class="section-text">Ou envie sua mensagem</h2>
-                        <input type="text" placeholder="Seu nome" class="contact__input">
-                        <input type="mail" placeholder="Seu e-mail" class="contact__input">
-                        <textarea name="message" placeholder="Digite aqui a sua mensagem"id="" cols="0" rows="10" class="contact__input"></textarea>
+                        <input type="text" name="name" placeholder="Seu nome" class="contact__input" required>
+                        <input type="email" name="email" placeholder="Seu e-mail" class="contact__input" required>
+                        <textarea name="message" placeholder="Digite aqui a sua mensagem" cols="0" rows="10" class="contact__input" required></textarea>
                         <input type="submit" value="Enviar" class="contact__button button">
                     </form>
                 </div>
@@ -224,6 +224,7 @@
         <script src="https://unpkg.com/scrollreveal"></script>
 
         <!--===== MAIN JS =====-->
+        <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
         <script src="assets/js/main.js"></script>
     </body>
 </html>
