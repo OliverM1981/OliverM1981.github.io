@@ -58,7 +58,7 @@ sr.reveal('.skills__data, .work__img, .contact__input',{interval: 100});
 /*===== EMAILJS INTEGRATION =====*/
 // Inicialize o EmailJS
 (function() {
-    emailjs.init(UwqsJ4UJFOds2_6ML); 
+    emailjs.init('UwqsJ4UJFOds2_6ML'); 
 
 function sendEmail(event) {
     event.preventDefault(); // Impede o envio padrão do formulário
